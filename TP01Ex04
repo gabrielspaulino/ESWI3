@@ -1,0 +1,23 @@
+package tp01ex04;
+import java.util.Scanner;
+public class TP01Ex04 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com a base e a altura de um triângulo, calcular e exibir sua área
+        double b;
+        double h;
+	double area;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite o valor da base: ");
+        b = ler.nextDouble();
+	System.out.print("Digite o valor da altura: ");
+        h = ler.nextDouble();
+        area = b * h / 2;
+
+        System.out.print("A área deste triângulo é igual a " + area);
+    }
+
+}
