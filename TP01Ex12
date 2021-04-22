@@ -1,0 +1,25 @@
+package tp01ex12;
+import java.util.Scanner;
+public class TP01Ex12 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com o raio da base e a altura de um cone, calcular e exibir o volume deste cone
+        double r;
+	double h;
+	double ab;
+	double v;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite o raio da base do cone (em metros): ");
+        r = ler.nextDouble();
+	System.out.print("Digite a altura do cone (em metros): ");
+        h = ler.nextDouble();
+	ab = Math.PI * r * r;
+	v = ab * h / 3;
+
+        System.out.print("O volume deste cone é igual a " + v + "m³");
+    }
+
+}
