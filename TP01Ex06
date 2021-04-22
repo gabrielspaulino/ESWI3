@@ -1,0 +1,29 @@
+package tp01ex06;
+import java.util.Scanner;
+public class TP01Ex06 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com 4 valores, calcular e exibir a média aritmética entre eles
+        double v1;
+        double v2;
+	double v3;
+	double v4;
+	double media;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite um valor: ");
+        v1 = ler.nextDouble();
+	System.out.print("Digite outro valor: ");
+        v2 = ler.nextDouble();
+	System.out.print("Digite outro valor: ");
+        v3 = ler.nextDouble();
+	System.out.print("Digite outro valor: ");
+        v4 = ler.nextDouble();
+        media = (v1 + v2 + v3 + v4) / 4;
+
+        System.out.print("A média entre esses 4 valores é igual a " + media);
+    }
+
+}
