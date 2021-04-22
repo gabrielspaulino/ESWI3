@@ -1,0 +1,31 @@
+package tp01ex16;
+import java.util.Scanner;
+public class TP01Ex16 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com um ângulo, calcular e exibir o seno, cosseno, tangente e secante deste ângulo
+        double angulo;
+        double seno;
+        double cosseno;
+        double tangente;
+        double secante;
+        double rad;
+        
+        Scanner ler = new Scanner(System.in);
+
+        System.out.print("Digite um ângulo: ");
+        angulo = ler.nextDouble();
+        rad = angulo * Math.PI/180;
+        seno = Math.sin(rad);
+        System.out.print("\nO seno deste ângulo é igual a " + seno);
+        cosseno = Math.cos(rad);
+        secante = 1 / cosseno;
+        System.out.print("\nO cosseno deste ângulo é igual a " + cosseno);
+        tangente = Math.tan(rad);
+        System.out.print("\nA tangente deste ângulo é igual a " + tangente);
+        System.out.print("\nA secante deste ângulo é igual a " + secante);
+    }
+
+}
