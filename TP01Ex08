@@ -1,0 +1,20 @@
+package tp01ex08;
+import java.util.Scanner;
+public class TP01Ex08 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com um valor em milhas marítimas, calcular e exibir o mesmo convertido em quilômetros
+        double milhas;
+	double km;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite uma distância em milhas marítimas: ");
+        milhas = ler.nextDouble();
+        km = milhas * 1.852;
+
+        System.out.print("Essa distância convertida é igual a " + km + " quilômetros");
+    }
+
+}
