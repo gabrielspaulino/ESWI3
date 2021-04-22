@@ -1,0 +1,35 @@
+package tp01ex18;
+import java.util.Scanner;
+public class TP01Ex18 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com o valor de 5 produtos e o valor a ser pago, calcular a soma entre eles, calcular e exibir o troco
+        double v1, v2, v3, v4, v5, soma, pago, troco;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.print("Digite o valor do primeiro produto: ");
+        v1 = ler.nextDouble();
+        System.out.print("Digite o valor do segundo produto: ");
+        v2 = ler.nextDouble();
+        System.out.print("Digite o valor do terceiro produto: ");
+        v3 = ler.nextDouble();
+        System.out.print("Digite o valor do quarto produto: ");
+        v4 = ler.nextDouble();
+        System.out.print("Digite o valor do quinto produto: ");
+        v5 = ler.nextDouble();
+        soma = v1 + v2 + v3 + v4 + v5;
+        System.out.print("\nValor total: " + soma + " reais.");
+        System.out.print("\nDigite o valor a ser pago para saber o troco: ");
+        pago = ler.nextDouble();
+        if(soma > pago){
+            System.out.print("\nDinheiro insuficiente.");
+        }
+        else{
+            troco = pago - soma;
+            System.out.print("\nTroco: " + troco + " reais.");
+        }
+    }
+
+}
