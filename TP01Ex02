@@ -1,0 +1,20 @@
+package tp01ex02;
+import java.util.Scanner;
+public class TP01Ex02 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com a aresta de um quadrado, calcular e exibir sua área
+        double aresta;
+        double area;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite a aresta: ");
+        aresta = ler.nextDouble();
+        area = aresta * aresta;
+
+        System.out.print("A área deste quadrado é igual a " + area);
+    }
+
+}
