@@ -1,0 +1,20 @@
+package tp01ex10;
+import java.util.Scanner;
+public class TP01Ex10 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com uma temperatura em Celsius, calcular e exibir a mesma convertida em Fahrenheit
+        double c;
+	double f;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite uma temperatura em Celsius: ");
+        c = ler.nextDouble();
+        f = 9 * c / 5 + 32;
+
+        System.out.print("Essa temperatura convertida é igual a " + f + "°F");
+    }
+
+}
