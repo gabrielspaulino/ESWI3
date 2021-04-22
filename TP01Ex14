@@ -1,0 +1,33 @@
+package tp01ex14;
+import java.util.Scanner;
+public class TP01Ex14 {
+
+    public static void main(String[] args) {
+        //Danilo Gabriel 
+        //Gabriel Paulino        
+        //1. Entrar via teclado com a aresta de um cubo e o raio da esfera inscrita neste cubo, calcular e exibir o volume livre dentro do cubo
+        double aresta;
+	double r;
+	double volumequadrado;
+	double volumeesfera;
+	double volumelivre;
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.print("Digite a aresta do cubo (em metros): ");
+        aresta = ler.nextDouble();
+	volumequadrado = aresta * aresta * aresta;
+	System.out.print("Digite o raio da esfera inscrita neste cubo (em metros): ");
+        r = ler.nextDouble();
+	if(2 * r > aresta)
+	{
+		System.out.print("Esta esfera não pode estar inscrita em um quadrado com a aresta que você digitou.");
+	}
+	else
+	{
+		volumeesfera = (4 * 3.14 * r * r * r) / 3;
+            	volumelivre = volumequadrado - volumeesfera;
+            	System.out.print("O volume livre é igual a " + volumelivre + "m³");
+        }
+
+    }
+}
